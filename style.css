@@ -1,0 +1,14 @@
+.storyimg{
+    width: 25%;
+    min-width: 120px;
+    
+}
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+article > .storydiv{
+   
+    flex: 0 0 10%;
+}
