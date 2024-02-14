@@ -1,14 +1,14 @@
 .storyimg{
     width: 25%;
-    min-width: 120px;
+    min-width: 480px;
     
 }
 article{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    gap: 10px;
 }
 article > .storydiv{
-   
-    flex: 0 0 10%;
+    flex: 0 0 20%;
 }
