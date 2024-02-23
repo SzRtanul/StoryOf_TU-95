@@ -12,3 +12,6 @@ article{
 article > .storydiv{
     flex: 0 0 20%;
 }
+.story{
+    border: 1px;
+}
