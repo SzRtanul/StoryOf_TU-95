@@ -1,6 +1,19 @@
-let sh = require('shelljs');
 
-faq = 1
-for (let i = 1; i < 16; i++){
-    document.getElementById("story").innerHTML += "<div class=\"storydiv\"id=\"k"+ Number(i*faq) +"\"><img class=\"storyimg\" src=\"kepek/k"+i+".png\" alt=\""+i+"\"></div>"
-}
+
+export const  SZEMELYLISTA = [
+    {
+        nev: "Szabó",
+        tel: 76,
+        suly: "Factorio"
+    },
+    {
+        nev: "Mészáros",
+        tel: 130,
+        suly: "Factorio"
+    },
+    {
+        nev: "Zontai",
+        tel: 13,
+        suly: 73
+    }
+];
