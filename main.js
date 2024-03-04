@@ -23,7 +23,7 @@ function updat(){
     story.innerHTML = "";
     for (let i = 1+faq; i < 5+faq; i++){
         if(LinkCheck(`kepek/k${i}.png`)){
-            story.innerHTML += `<div class=\"storydiv\"id=\"k${i}\"><img id=\"ki${i}\" class=\"storyimg\" src=\"kepek/k${i}.png\" alt=\"${i}\"></div>`
+            story.innerHTML += `<div class=\"storydiv\"id=\"k${i}\"><img id=\"ki${i}\" onclick=\"megjkep(kepek/k${i}.png)\" class=\"storyimg\" src=\"kepek/k${i}.png\" alt=\"${i}\"></div>`
         }
         else{
             story.innerHTML += `<div class=\"storydiv\"id=\"k${i}\"><img id=\"ki${i}\" class=\"storyimg\" src=\"kepek/k0.png\" alt=\"${i}\"></div>`
@@ -39,5 +39,9 @@ function LinkCheck(url){
     var http = new XMLHttpRequest();
     http.open('HEAD', url, false);
     http.send();
-    return http.status!=404;
+    return http.status != 404;
+}
+
+function megjkep(url){
+    
 }
