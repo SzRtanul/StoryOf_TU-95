@@ -9,18 +9,67 @@
 </head>
 <body>
     <main>
-        <article>
-           <div class="ui flex-container">
-                <div class="lepteto"><button id="backwardimage">&lt;</button></div>
-                <div class="megj">
-                    <div class="storystore" id="story">
-                        
+        <nav></nav>
+        <header></header>
+        <aside></aside>
+        <article class="flex-container">
+           <div class="">
+                <div class="ui flex-container">
+                    <div class="lepteto"><button id="backwardimage">&lt;</button></div>
+                    <div class="megj">
+                        <div class="storystore" id="story">
+                            
+                        </div>
                     </div>
-                </div>
-                <div class="lepteto"><button id="forwardimage">&gt;</button></div>
+                    <div class="lepteto"><button id="forwardimage">&gt;</button></div>
+            </div>
            </div>
         </article>
+        <aside></aside>
+        <footer></footer>
     </main>
+    
+    <div id="myPopup" class="popup">
+        <div class="popup-content">
+            <div class="section1">
+                <button class="importCSV">import from CSV</button>
+                <button class="importJSON">import from JSON</button>
+                <button id="closePopup" class="">x</button>
+            </div>
+            <div class="tablemin egg">
+                <table class="containerlist newcontainers">
+                    <thead>
+                        <tr class="header">
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                        <tr class="header">
+                            <td><input type="checkbox" name="" class="allitems"></td>
+                            <td>ID</td>
+                            <td>Block ID</td>
+                            <td>Bay Number</td>
+                            <td>Stack Number</td>
+                            <td>Tier Number</td>
+                            <td>Arrived Time</td>
+                            <td>Ch</td>
+                            <td>D</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+           
+        </div>
+    </div>
     <script type="module" src="main.js"></script>
 </body>
 </html>
