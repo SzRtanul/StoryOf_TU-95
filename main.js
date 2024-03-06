@@ -1,6 +1,7 @@
 import { SZEMELYLISTA } from "./funk.js"
 import { workwithlist } from "./fuggveny.js"
 
+let eventis = [];
 let kepekszama = 15;
 let ertek = 0;
 let imgforward = document.getElementById("forwardimage")
@@ -23,15 +24,14 @@ function updat(){
     story.innerHTML = "";
     for (let i = 1+faq; i < 5+faq; i++){
         if(LinkCheck(`kepek/k${i}.png`)){
-            story.innerHTML += `<div class=\"storydiv\"id=\"k${i}\"><img id=\"ki${i}\" onclick=\"megjkep(kepek/k${i}.png)\" class=\"storyimg\" src=\"kepek/k${i}.png\" alt=\"${i}\"></div>`
+            story.innerHTML += `<div class=\"storydiv\"id=\"k${i}\"><img id=\"ki${i}\" class=\"storyimg\" src=\"kepek/k${i}.png\" alt=\"${i}\"></div>`
+            eventis.push(document.getElementById (`k${i}`).addEventListener ("click", megjkep(`kepek/k${i}.png`)));
         }
         else{
             story.innerHTML += `<div class=\"storydiv\"id=\"k${i}\"><img id=\"ki${i}\" class=\"storyimg\" src=\"kepek/k0.png\" alt=\"${i}\"></div>`
         }
     }
 }
-let copyB = document.getElementById("copy");
-copyB.addEventListener("click", function(){ leptet(1) })
 
 console.log(workwithlist(SZEMELYLISTA))
 
@@ -44,6 +44,7 @@ function LinkCheck(url){
 
 function megjkep(url){
     myPopup.classList.add("show");
+    console.log("Nagy a faszom");
 }
 // Popup ablakkezelő
 
